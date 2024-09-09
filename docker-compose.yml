@@ -1,0 +1,18 @@
+services:
+  php:
+    build:
+      context: .
+      dockerfile: ./config/php/Dockerfile
+    volumes:
+      - ./src:/app
+    ports:
+      - 9080:9000 
+  web:
+    image: nginx:latest
+    ports:
+      - 8085:80
+    volumes:
+      - ./src:/app
+      - ./config/nginx/default.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - php
