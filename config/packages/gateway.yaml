@@ -1,0 +1,8 @@
+parameters:
+  gateways:
+    aci:
+      class: 'App\Service\PaymentGateway\ACIProcessor'
+      enabled: true
+    shift4:
+      class: 'App\Service\PaymentGateway\Shift4Processor'
+      enabled: true
