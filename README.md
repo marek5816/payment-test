@@ -109,3 +109,12 @@ The web server will then run under port ``8085``
     [ERROR] Code:                                                                                                          
     [ERROR] Message: Error in 'cardNumber': The card number must be in range of 8-19 digits. 
     ```
+
+## To Do (Added on 10.9.2024 after submission)
+The application can be improved in several ways to enhance its functionality
+- Implement rate limiting
+- Add authentication using MID and HMAC
+- Fix naming for gateway services (add a prefix)
+- Add logging for all API requests and responses
+- Implement real-time monitoring/alerting for critical errors
+- Use a circuit breaker pattern to handle temporary outages
