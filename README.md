@@ -114,7 +114,6 @@ The web server will then run under port ``8085``
 The application can be improved in several ways to enhance its functionality
 - Implement rate limiting
 - Add authentication using MID and HMAC
-- Fix naming for gateway services (add a prefix)
 - Add logging for all API requests and responses
 - Implement real-time monitoring/alerting for critical errors
 - Use a circuit breaker pattern to handle temporary outages
